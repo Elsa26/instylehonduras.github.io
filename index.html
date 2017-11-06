@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>InStyle</title>
+	<meta name="viewport" content="width=device-width,user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1">
+	<link rel="stylesheet" href="css/fontello.css">
+	<link rel="stylesheet" href="css/estilos.css">
+	<link rel="stylesheet" href="css/nivo-slider.css">
+	<link rel="stylesheet" href="css/mi-slider.css">
+
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js" type="text/javascript"></script>
+	<script src="js/jquery.nivo.slider.js"></script>
+	<script type="text/javascript"> 
+		$(window).on('load', function() {
+		    $('#slider').nivoSlider(); 
+		}); 
+	</script>
+
+</head>
+<body>
+  <div class="slider-wrapper theme-mi-slider">
+		<div id="slider" class="nivoSlider">     
+		    <img src="imgs/S1.jpeg" alt="" title="#htmlcaption1" />    
+		    <img src="imgs/S2.jpeg" alt="" title="#htmlcaption2" />    
+		    <img src="imgs/S3.jpeg" alt="" title="#htmlcaption3" /> 
+		    <img src="imgs/S4.jpeg" alt="" title="#htmlcaption4" />        
+		</div> 
+		<div id="htmlcaption1" class="nivo-html-caption">     
+		    <h1></h1>
+		</div>
+		<div id="htmlcaption2" class="nivo-html-caption">     
+		    <h1></h1>
+		</div>
+		<div id="htmlcaption3" class="nivo-html-caption">     
+		    <h1></h1>
+	    </div>
+	    <div id="htmlcaption4" class="nivo-html-caption">     
+		    <h1></h1>
+		</div>
+   </div>
+
+	<header>
+		<div class="contenedor">
+			<h1 class="--AQUI SE LE PUEDE AÑADIR UN ICONO A LA EMPRESA--">InStyle</h1>
+			<input type="checkbox" id="menu-bar">
+			<label class = "icon-menu" for="menu-bar"></label>
+
+			<nav class = "menu">
+				<!-- Cambiarlo a il mas tarde-->
+				<a href="index.html">Inicio</a>
+				<a href="hombre.html">Hombre</a>
+				<a href="mujer.html">Mujer</a>
+				<a href="contacto.html">Contacto</a>
+			</nav>
+		</div>
+	</header>
+
+	<main>
+		<section id="bienvenidos">
+			<h2>Bienvenidos a InStyle</h2>
+			<p>InStyle es unas de las tiendas mas grande de centroamerica. </p>
+		</section>
+
+		<section id="categorias">
+			<div class="contenedor">
+				<article>
+					<a href="hombre.html"><img src="imgs/ropaHombre.jpg" alt=""></a>
+					<h4>HOMBRE</h4>
+				</article>
+				<article>
+					<a href="mujer.html"><img src="imgs/ropaMujer.jpg" alt=""></a>
+					<h4>MUJER</h4>	
+				</article>
+			</div>
+		</section>
+
+	<section id="info">
+		<h3>Galeria InStyle, comparte tu estilo.</h3>
+		<div class="contenedor">
+			<div class="info-ropa">
+				<img src="imgs/img1.jpg" alt="">
+				<h4>Novedad 1</h4>
+			</div>
+			<div class="info-ropa">
+				<img src="imgs/img2.jpg" alt="">
+				<h4>Novedad 2</h4>
+			</div>
+			<div class="info-ropa">
+				<img src="imgs/img3.jpg" alt="">
+				<h4>Novedad 3</h4>
+			</div>
+			<div class="info-ropa">
+				<img src="imgs/img4.jpg" alt="">
+				<h4>Novedad 4</h4>
+			</div>
+		</div>
+	</section>
+	</main>
+
+	<footer>
+		<div class="contenedor">
+			<p class="copyright">InStyle &copy; 2017</p>
+			<div class="sociales">
+				<h5>Siguenos en</h5>
+				<a class="icon-facebook-official" href="#"></a>
+				<a class="icon-twitter-squared"href="#"></a>
+			</div>
+		</div>
+	</footer>
+</body>
+</html>

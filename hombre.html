@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>InStyle</title>
+	<meta name="viewport" content="width=device-width,user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1">
+	<link rel="stylesheet" href="css/fontello.css">
+	<link rel="stylesheet" href="css/estilos.css">
+
+	<link rel="stylesheet" href="css/galeriaEstilos.css">
+
+	<script type="text/javascript" src ="js/jquery-1.12.4.min.js"></script>
+	<script type="text/javascript" src ="js/jquery.mixitup.min.js"></script>
+	<script type="text/javascript" src ="html5lightbox/html5lightbox.js"></script>
+
+	<script type="text/javascript">
+		$(function(){
+			$("#portafolio").mixitup({
+				targetSelector: ".item",
+				transitionSpeed: 450
+			});
+		});
+	</script>
+
+</head>
+<body>
+	<header>
+		<div class="contenedor">
+			<h1 class="--AQUI SE LE PUEDE AÑADIR UN ICONO A LA EMPRESA--">InStyle</h1>
+			<input type="checkbox" id="menu-bar">
+			<label class = "icon-menu" for="menu-bar"></label>
+
+			<nav class = "menu">
+				<!-- Cambiarlo a il mas tarde-->
+				<a href="index.html">Inicio</a>
+				<a href="hombre.html">Hombre</a>
+				<a href="mujer.html">Mujer</a>
+				<a href="contacto.html">Contacto</a>
+			</nav>
+		</div>
+	</header>
+
+	<main>
+	
+
+	<section id="contenedorGaleria">
+		<!-- Botones -->
+		<ul id="listado">
+			<li class ="filtro" data-filter="all">Todo</li>
+			<li class ="filtro" data-filter="camisas">Camisas</li>
+ 			<li class ="filtro" data-filter="jeans">Jeans</li>
+		</ul>
+			
+		<!-- Imagenes -->
+		<!-- para filtrar imagenes solo cambiar [class ="item camisas"]-->
+		<ul id="portafolio">
+			<li class ="item camisas">
+				<a href="imgs/hombreRopa/h1.jpg" class = "html5lightbox" data-group="galeria" title="Descripcion">
+				<img src="imgs/hombreRopa/h1.jpg"></img>
+				</a>
+				<h4>Lps.330</h4>
+			</li>
+			<li class ="item camisas">
+				<a href="imgs/hombreRopa/h2.jpg" class = "html5lightbox" data-group="galeria" title="Descripcion">
+				<img src="imgs/hombreRopa/h2.jpg"></img>
+				</a>
+				<h4>Lps.430</h4>
+			</li>
+			<li class ="item camisas">
+				<a href="imgs/hombreRopa/h3.jpg" class = "html5lightbox" data-group="galeria" title="Descripcion">
+				<img src="imgs/hombreRopa/h3.jpg"></img>
+				</a>
+				<h4>Lps.370</h4>
+			</li>
+			<li class ="item camisas">
+				<a href="imgs/hombreRopa/h4.jpg" class = "html5lightbox" data-group="galeria" title="Descripcion">
+				<img src="imgs/hombreRopa/h4.jpg"></img>
+				</a>
+				<h4>Lps.250</h4>
+			</li>
+			<li class ="item jeans">
+				<a href="imgs/hombreRopa/h5.jpg" class = "html5lightbox" data-group="galeria" title="Descripcion">
+				<img src="imgs/hombreRopa/h5.jpg"></img>
+				</a>
+				<h4>Lps.830</h4>
+			</li>
+			<li class ="item jeans">
+				<a href="imgs/hombreRopa/h6.jpg" class = "html5lightbox" data-group="galeria" title="Descripcion">
+				<img src="imgs/hombreRopa/h6.jpg"></img>
+				</a>
+				<h4>Lps.660</h4>
+			</li>
+		</ul>
+
+	</section>
+
+
+
+	</main>
+
+	<footer>
+		<div class="contenedor">
+			<p class="copyright">InStyle &copy; 2017</p>
+			<div class="sociales">
+				<h5>Siguenos en</h5>
+				<a class="icon-facebook-official" href="#"></a>
+				<a class="icon-twitter-squared"href="#"></a>
+			</div>
+		</div>
+	</footer>
+</body>
+</html>
